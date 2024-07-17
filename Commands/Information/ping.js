@@ -18,7 +18,7 @@ module.exports = {
     const embedje2 = new EmbedBuilder()
     .setColor("White")
     .setDescription(`Latency: ${sent.createdTimestamp - interaction.createdTimestamp}ms`)
-    .setFooter({ text: `Powered by ${client.user.username}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
+    .setFooter({ text: `Powered sby ${client.user.username}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
     .setTimestamp()
 
     interaction.editReply({ embeds: [embedje2] });
