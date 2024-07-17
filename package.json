@@ -1,0 +1,17 @@
+{
+  "name": "maiky-2.0",
+  "version": "1.0.0",
+  "description": "Maiky rebuild",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "ascii-table3": "^0.9.0",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  }
+}
