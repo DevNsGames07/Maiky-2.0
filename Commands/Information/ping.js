@@ -3,7 +3,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName('testing')
+    .setName('ping')
     .setDescription('Replies with Pong!'),
   async execute(interaction, client) {
 
@@ -13,7 +13,7 @@ module.exports = {
     .setFooter({ text: `Powered by ${client.user.username}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
     .setTimestamp()
 
-    const sent = await interaction.reply({ embeds: [embedje], fetchReply: true })
+    const sent = await interaction.reply({ embeds: [embedje], ephemeral: true })
 
     const embedje2 = new EmbedBuilder()
     .setColor("White")
@@ -21,7 +21,7 @@ module.exports = {
     .setFooter({ text: `Powered sby ${client.user.username}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
     .setTimestamp()
 
-    interaction.editReply({ embeds: [embedje2] });
+    interaction.editReply({ embeds: [embedje2], ephemeral: true });
 
 
   },
