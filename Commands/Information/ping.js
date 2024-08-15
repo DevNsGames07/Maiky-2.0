@@ -17,7 +17,7 @@ module.exports = {
 
     const embedje2 = new EmbedBuilder()
     .setColor("White")
-    .setDescription(`Latency: ${sent.createdTimestamp - interaction.createdTimestamp}ms`)
+    .setDescription(`Latency: ${client.ws.ping}ms`)
     .setFooter({ text: `Powered sby ${client.user.username}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
     .setTimestamp()
 
